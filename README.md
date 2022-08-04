@@ -23,8 +23,12 @@
 > 6. git push origin main
 > 7. 자신의 fork한 레퍼지토리에서 Pull Request 생성
 
-### 1.2 Git Desktop을 사용한 방법(추가예정)
-
+### 1.2 Git Desktop을 사용한 방법
+> 1. 파일 작성 후 저장
+> 2. Git Desktop>changes에 파일 작성 및 수정 사항 확인
+> 3. commit to main
+> 4. pull origin
+> 5. 자신의 fork한 레퍼지토리에서 Pull Request 생성
 <hr/>
 
 ## 2. 폴더 생성 / 파일 생성 / 명명 규칙
