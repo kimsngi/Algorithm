@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+#include <string>
+
+int main() {
+	string eng[3];
+	for (int i = 0; i < 3; i++) {
+		cin >> eng[i];
+	}
+	int arr[30]={0,};
+	int a = 0;
+	for (int i = 0; i < 3; i++) {
+		for (int k = 0; k < eng[i].size(); k++) {
+			arr[(int)(eng[i][k] - 'A')] += 1;
+		}
+	}
+	
+	for (int i = 0; i < 29; i++) {
+		if (arr[i] > 1) {
+			cout << "No";
+			a = 1;
+			break;
+		}
+	}
+	if (a == 0) { cout << "Perfect"; }
+}
