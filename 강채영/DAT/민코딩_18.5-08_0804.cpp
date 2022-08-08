@@ -49,6 +49,7 @@ int main()
 	{
 		cout << "Perfect";
 	}
+
 	else
 	{
 		cout << "No";
