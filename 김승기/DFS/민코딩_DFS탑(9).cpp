@@ -47,7 +47,7 @@ int main() {
 		revarr[to].push_back(from);
 	}
 
-	if (arr[x].size() > 0) {
+	if (arr[x].size() > 0 || revarr[x].size() >0 ) {
 		
 		visited[x] = 1;
 		dfs(x);
