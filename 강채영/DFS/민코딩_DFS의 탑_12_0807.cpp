@@ -93,6 +93,11 @@ int main()
 			area = ((max_y - min_y + 2) + (max_x - min_x + 2)) * 2;
 			result[t] = area;
 			t++;
+
+			max_y = -123456789;
+			max_x = -123456789;
+			min_y = 123456789;
+			min_x = 123456789;
 		}
 	}
 	
