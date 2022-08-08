@@ -27,7 +27,7 @@
 > 1. 파일 작성 후 저장
 > 2. Git Desktop>changes에 파일 작성 및 수정 사항 확인
 > 3. commit to main
-> 4. pull origin
+> 4. push origin
 > 5. 자신의 fork한 레퍼지토리에서 Pull Request 생성
 <hr/>
 
