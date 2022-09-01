@@ -103,6 +103,7 @@ int main()
 
 		sum = ms;
 		int result = func(0);
+		cout << result << endl;
 
 		cout << (ms + (ma * l)) - result;
 
