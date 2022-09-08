@@ -27,20 +27,20 @@ bool cmp(Node a, Node b)
 	return false;
 }
 
-int find()
+long long find()
 {
 	long long left = 0;
-	long long right = 0;  
+	long long right = 0;
 	long long sum = 0;
 	long long maxval = -1;
 
-	while (left <= right && right<=n)
+	while (left <= right && right < n)
 	{
 
 		if (abs(friends[right].p - friends[left].p) < d)
 		{
+			sum += friends[right].v;
 			right++;
-			sum = sum + friends[right].v;
 		}
 		else
 		{
@@ -66,7 +66,7 @@ int main()
 
 	sort(friends.begin(), friends.end(), cmp);
 
-	int result = find();
+	long long result = find();
 
 	cout << result;
 }
