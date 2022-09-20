@@ -1,17 +1,9 @@
 #include <iostream>
-#include <string>
-#include <math.h>
-#include <queue>
-#include <string.h>
 using namespace std;
 int arr[1001];
 int dat[1001];
 
-int main(){
-	ios_base::sync_with_stdio(false);
-	cin.tie();
-	cout.tie();
-
+int main() {
 	int n;
 	cin >> n;
 	for (int i = 1; i <= n; i++) {
@@ -19,15 +11,15 @@ int main(){
 	}
 	int k = 1;
 	int sum = 0;
-	while(1) {
+	while (1) {
 		cout << k << " ";
 		dat[k] = 1;
 		sum++;
 		if (sum == n)break;
 		int num = arr[k];
+		int cnt = 0;
 		if (num > 0) {
-			int cnt = 0;
-			for (int i = k+1; i <= n; i++) {
+			for (int i = k + 1; i <= n; i++) {
 				if (dat[i] == 0)cnt++;
 				if (cnt == num) {
 					k = i;
@@ -48,7 +40,6 @@ int main(){
 			}
 		}
 		if (num < 0) {
-			int cnt = 0;
 			for (int i = k - 1; i >= 1; i--) {
 				if (dat[i] == 0)cnt++;
 				if (cnt == abs(num)) {
